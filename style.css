@@ -52,6 +52,7 @@ main {
   background: #ff0000;
   padding-right: 10rem;
   padding-left: 4rem;
+  color: #ebeced;
 }
 nav {
   grid-area: nav;
