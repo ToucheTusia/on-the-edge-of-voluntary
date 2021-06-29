@@ -13,7 +13,7 @@ I will try to carry this knowledge with me as we find ourselves on the precipice
 
 
 
-
+-----
 
 (1) Russel, Legacy. Elsewhere, After the Flood: Glitch Feminism and the Genesis of Glitch Body Politic. Mar 12, 2013 (https://rhizome.org/editorial/2013/mar/12/glitch-body-politic/)
 
