@@ -6,7 +6,7 @@ But, as we have known for a while, this space of togetherness is colonized and g
 
 The pandemic forced us into a physical isolation. What if our experience of distance and proximity between us was not defined by "poor" or "unstable" connection, the glitchy voice, and the blurry face? What if all of our scrolls, the tiniest of motions, were a call for kinship with the person on the other side of the browser window or the person in a building across the street? 
 
-The undulations of this time, the stream of data flows, made me often feel like I was sinking, but the current crisis also made me realize that the value of transmission is in circulation.  
+The undulations of this time, the stream of breaking news and data flows, made me often feel like I was sinking, but the current crisis also made me realize that the value of transmission is in circulation.  
 
 I will try to carry this knowledge with me as we find ourselves on the precipice.
 
