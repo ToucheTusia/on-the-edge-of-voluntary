@@ -23,19 +23,12 @@ I will try to carry this knowledge with me as we find ourselves on the precipice
 
 -----
 On the Edge of Voluntary by Tusia Dabrowska
-
 Scroll Triggered Animation
-
 Choreography Tusia Dabrowska and Wanda Gala
-
 Dancer: Tusia Dabrowska
-
 Code Mysterious Mervin, the Robot
 
 Undulations by Tusia Dabrowska
-
-Machine Learning Model trained on 9500 images
-
+Machine Learning Model trained on 9500 images, grid of 9 animations
 Choreography Tusia Dabrowska and Wanda Gala
-
 Dancers: Tusia Dabrowska and Wanda Gala
