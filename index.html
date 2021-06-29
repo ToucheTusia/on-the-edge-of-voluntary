@@ -15,17 +15,80 @@
       background-color: black;
     }
 
+    a:link { color: #2e00c4; text-decoration: none}
+    a:visited { color: #2e00c4; text-decoration: none}
+    a:hover { color: #2e00c4; text-decoration: none;}
+    a:active { color: #2e00c4; text-decoration: none}
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    footer {
+      padding-top: 1rem;
+      padding-right: 10rem;
+      padding-left: 4rem;
+      background-color: #f5f5f5;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 400;
+      color: black;
+      font-family: Arial;
+      font-style: normal;
+      line-height: 1.3rem;
+    }
+    header {
+      padding: 1.3rem;
+      text-align: center;
+      background: #f5f5f5;
+      color: #2e00c4;
+      word-spacing: 10rem;
+      font-family: Arial;
+      font-style: italic;
+      font-size: 1.4rem;
+      font-weight: 900;
+    }
+    nav {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      text-align: center;
+      background: #f5f5f5;
+      color: black;
+      max-height: 100vh;
+    }
+    nav * {
+      margin: 0;
+      padding: 0.3rem;
+      text-align: center;
+      text-decoration: none;
+    }
     #scene {
+      width: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      height: 300vh;
+      box-sizing: border-box;
+    }
+    #scene.scene-active #sprite-layer {
+      position: fixed;
+    }
+    #sprite-layer {
+      position: relative;
+      top: 0px;
+      width: 100%;
       padding: 2rem;
+      height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       align-content: center;
       box-sizing: border-box;
       flex-direction: column;
-      height: 100vh;
-      width: 100vw;
-      position: fixed;
     }
     .sprite-row {
       display: flex;
@@ -47,77 +110,96 @@
        234 - x
        x = 234 * 20 / 416 = 11.25
       */
-       width: 11.25vh;
-       height: 20vh;
-       }
-       #sprite-01 {
-         background-image: url("virus.jpg");
-       }
-       #sprite-02 {
-         background-image: url("spinning.jpg");
-       }
-       #sprite-03 {
-         background-image: url("six-ft-apart.jpg");
-       }
-       #sprite-04 {
-         background-image: url("outta-my-mind.jpg");
-       }
-       #sprite-05 {
-         background-image: url("virus.jpg");
-       }
-       #sprite-06 {
-         background-image: url("headaches.jpg");
-       }
-       #sprite-07 {
-         background-image: url("wave.jpg");
-       }
-       #sprite-08 {
-         background-image: url("so-bored.jpg");
-       }
-       #sprite-09 {
-         background-image: url("virus.jpg");
-       }
-       #scrolling-layer {
-         height: 300vh;
-       }
-</style>
+      width: 11.25vh;
+      height: 20vh;
+    }
+    #sprite-01 {
+      background-image: url("virus.jpg");
+    }
+    #sprite-02 {
+      background-image: url("spinning.jpg");
+    }
+    #sprite-03 {
+      background-image: url("six-ft-apart.jpg");
+    }
+    #sprite-04 {
+      background-image: url("outta-my-mind.jpg");
+    }
+    #sprite-05 {
+      background-image: url("virus.jpg");
+    }
+    #sprite-06 {
+      background-image: url("headaches.jpg");
+    }
+    #sprite-07 {
+      background-image: url("wave.jpg");
+    }
+    #sprite-08 {
+      background-image: url("so-bored.jpg");
+    }
+    #sprite-09 {
+      background-image: url("virus.jpg");
+    }
+  </style>
 </head>
 <body>
-  <body>
-<div id="scene">
-  <div class="sprite-row">
-    <div id="sprite-01" class="sprite"></div>
-    <div id="sprite-02" class="sprite"></div>
-    <div id="sprite-03" class="sprite"></div>
+<header>
+  <a class="active" href="https://desktoparchives.cargo.site/">DA</a>
+  <a href="https://desktoparchives.cargo.site/DA-bios">ARTISTS</a>
+  <a href="https://desktoparchives.cargo.site/Details">DETAILS</a>
+</header>
+
+<main>
+  <section>
+    ←
+    New York / Berlin
+    →
+  </section>
+   <div id="scene">
+     <div id="sprite-layer">
+       <div class="sprite-row">
+         <div id="sprite-01" class="sprite"></div>
+         <div id="sprite-02" class="sprite"></div>
+         <div id="sprite-03" class="sprite"></div>
+       </div>
+       <div class="sprite-row">
+         <div id="sprite-04" class="sprite"></div>
+         <div id="sprite-05" class="sprite"></div>
+         <div id="sprite-06" class="sprite"></div>
+       </div>
+       <div class="sprite-row">
+         <div id="sprite-07" class="sprite"></div>
+         <div id="sprite-08" class="sprite"></div>
+         <div id="sprite-09" class="sprite"></div>
+       </div>
+     </div>
   </div>
-  <div class="sprite-row">
-    <div id="sprite-04" class="sprite"></div>
-    <div id="sprite-05" class="sprite"></div>
-    <div id="sprite-06" class="sprite"></div>
-  </div>
-  <div class="sprite-row">
-    <div id="sprite-07" class="sprite"></div>
-    <div id="sprite-08" class="sprite"></div>
-    <div id="sprite-09" class="sprite"></div>
-  </div>
-</div>
-<div id="scrolling-layer"></div>
+</main>
+<footer>
+  <p>Desktop Archives is an online publishing initiative and event series that showcases webworks from 10 different
+    artists. Together, the platform documents and archives unrests from the pandemic and the asynchronous,
+    unequivalent emergences. The platform is a growing archive and will have three editions
+    in June, September, and November 2021.</p>
+  <p>Dates: June 30th 2021- December 31st </p>
+  <p>Warsaw | Berlin | Tbilisi</p>
+  <p>website: <a class="active" href="https://tusiadabrowska.com/">tusia dabrowska</a></p>
+</footer>
 <script>
   (function() {
 
-    const getVerticalScrollPercentage = (el) => {
+    const getVerticalScrollValue = function(el) {
       const p = el.parentNode
-      return (el.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight) * 100
+      return el.scrollTop || p.scrollTop;
     }
 
-    const selectSpriteIndexToDisplay = (percentage, scene) => {
+    const selectSpriteIndexToDisplay = function(percentage, scene) {
       return Math.min(
-          Math.floor(percentage / scene.scrollStep),
-          scene.overallNum - 1
+              Math.floor(percentage / scene.scrollStep),
+              scene.overallNum - 1
       );
     }
 
-    const selectBackgroundPositionForSpriteIndex = (index, scene) => {
+    const selectBackgroundPositionForSpriteIndex = function(index, scene) {
       const row = Math.floor(index / scene.columns);
       const column = Math.floor(index % scene.columns);
       return {
@@ -143,27 +225,94 @@
     let currentSpriteRow = 0;
     let currentSpriteColumn = 0;
 
-    const updateScene = () => {
+    const updateScene = function() {
       if (visibleSpriteIndex !== currentSpriteIndex) {
         const px = (currentSpriteColumn * scene.spriteWidth) / (scene.spriteSheetWidth - scene.spriteWidth) * 100;
         const py = (currentSpriteRow * scene.spriteHeight) / (scene.spriteSheetHeight - scene.spriteHeight) * 100;
         for (const x of allSpriteElements) {
-            x.style.backgroundPositionX = `${px}%`;
-            x.style.backgroundPositionY = `${py}%`;
+          x.style.backgroundPositionX = String(px) + '%';
+          x.style.backgroundPositionY = String(py) + '%';
         }
         visibleSpriteIndex = currentSpriteIndex;
       }
-      requestAnimationFrame(updateScene)
+      requestAnimationFrame(updateScene);
     }
-    const onScroll = () => {
-      const p = getVerticalScrollPercentage(document.body);
-      currentSpriteIndex = selectSpriteIndexToDisplay(p, scene);
+
+    let isSceneActive = null;
+    const sceneElement = document.querySelector('#scene');
+    const spriteLayerElement = document.querySelector('#sprite-layer');
+
+    const onSceneScroll = function() {
+      const sceneElementRect = sceneElement.getBoundingClientRect();
+      const vsv = getVerticalScrollValue(document.body);
+      const sceneVsv = vsv - sceneElement.offsetTop;
+      const sceneVsvPercent = sceneVsv / (sceneElementRect.height - document.body.clientHeight) * 100;
+      const normalizedVsvPercent = Math.min(100, Math.max(0, sceneVsvPercent));
+      currentSpriteIndex = selectSpriteIndexToDisplay(normalizedVsvPercent, scene);
       const x = selectBackgroundPositionForSpriteIndex(currentSpriteIndex, scene);
       currentSpriteRow = x.row;
       currentSpriteColumn = x.column;
+      requestAnimationFrame(updateScene);
     }
-    document.addEventListener("scroll", onScroll);
-    requestAnimationFrame(updateScene);
+
+    const activateScene = function() {
+      if (isSceneActive) {
+        return;
+      }
+      isSceneActive = true;
+      document.addEventListener("scroll", onSceneScroll);
+      sceneElement.classList.add('scene-active');
+      spriteLayerElement.style.top = '0px';
+    }
+
+    const deactivateScene = function() {
+      if (!isSceneActive && null !== isSceneActive) {
+        return false;
+      }
+
+      if (null !== isSceneActive) {
+        document.removeEventListener("scroll", onSceneScroll);
+        sceneElement.classList.remove('scene-active');
+      }
+
+      isSceneActive = false;
+      return true;
+    }
+
+    const deactivateSceneOnTop = function() {
+      if (deactivateScene()) {
+        spriteLayerElement.style.top = '0px';
+      }
+    }
+
+    const deactivateSceneOnBottom = function() {
+      if (deactivateScene()) {
+        spriteLayerElement.style.top = '200vh';
+        onSceneScroll();
+      }
+    }
+
+    const onGenericScroll = function() {
+      const vsv = getVerticalScrollValue(document.body);
+      const sceneRect = sceneElement.getBoundingClientRect();
+      if ((vsv + document.body.clientHeight) >= (vsv + sceneRect.bottom)) {
+        deactivateSceneOnBottom();
+       } else if (vsv >= sceneElement.offsetTop) {
+        activateScene();
+      } else {
+        deactivateSceneOnTop();
+      }
+    }
+
+    const onGenericResize = function() {
+      onGenericScroll();
+    }
+
+    document.addEventListener("scroll", onGenericScroll);
+    document.addEventListener("resize", onGenericResize);
+
+    onGenericScroll();
+
   })();
 </script>
 </body>
