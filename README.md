@@ -16,7 +16,7 @@ I will try to carry this knowledge with me as we find ourselves on the precipice
 
 
 (1) Russel, Legacy. Elsewhere, After the Flood: Glitch Feminism and the Genesis of Glitch Body Politic. Mar 12, 2013 (https://rhizome.org/editorial/2013/mar/12/glitch-body-politic/)
-(2) This echoes The Public Service Manifesto. http://bit.ly/signPSManifesto
+(2) This echoes The Public Service Manifesto. https://www.dropbox.com/s/cwn32clftbp5who/Public%20Service%20Media%20and%20Public%20Service%20Internet%20Manifesto.pdf
 
 
 
